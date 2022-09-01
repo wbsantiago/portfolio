@@ -175,11 +175,10 @@ h4 {
 }
 
 #projects {
-    height: 900px;
     margin-top: 4em;
 }
 
-#projects h2 {
+#projects h2, #contact h2 {
     color: white;
     margin-left: 4em;
     font-size: 36px;
@@ -187,7 +186,7 @@ h4 {
     font-style: italic;
 }
 
-#projects span {
+#projects span, #contact span {
     color: var(--color1);
     font-weight: 700;
     font-size: 54px;
@@ -241,6 +240,50 @@ h4 {
 .projects-description a {
     color: white;
     text-decoration: none;
+}
+
+#contact {
+    margin: 4em 0 7em 0;
+}
+
+.contact-text {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 8em 4em;
+}
+
+.contact-text p {
+    color: white;
+}
+
+.contact-text p:first-of-type {
+    margin-bottom: 1.5em;
+}
+
+.interview-img {
+    width: 30vw;
+    border-radius: 30%;
+    box-shadow: 0 0 10px var(--color4);
+    /* border: 1px solid ; */
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-links i {
+    color: white;
 }
 
 @media only screen and (max-width: 1280px) {
