@@ -14,7 +14,7 @@
     --color5: #03A688;
 }
 
-* {
+*, * ::after, * ::before {
   padding: 0;
   margin: 0;
 }
@@ -22,33 +22,35 @@
 html {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
-  background-repeat: no-repeat;
+  /* background-repeat: repeat; */
+  /* background-color: var(--color3); */
 }
 
 body {
     margin: 0 auto;
+    max-width: 1280px;
 }
 
 header {
     padding: 1.5em 0 1em 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
 }
 
 #navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
 }
 
 #logo {
     color: white;
     text-decoration: none;
-    text-shadow: 1px 1px 2px var(--color1);
     font-size: 1.5em;
+    font-weight: 700;
+    color: var(--color1);
+    text-shadow: 0.5px 0.5px 2px rgba(255,255,255, 0.2);
 }
 
 #navbar ul {
@@ -80,6 +82,8 @@ h4 {
     color: white;
     font-style: italic;
     font-weight: 300;
+    color: var(--color1);
+    text-shadow: 0.5px 0.5px 2px rgba(255,255,255, 0.2);
 }
 
 #welcome-section {
@@ -89,6 +93,7 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    margin: auto;
 }
 
 .div-about {
@@ -96,21 +101,39 @@ h4 {
 }
 
 .about-me {
-    width: 400px;
+    max-width: 400px;
     color: white;
+    margin: auto;
 }
 
 .technologies {
     margin-top: 4em;
 }
 
-.technologies img {
-    color: white;
+.technologies h4 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 1em;
+    text-align: center;
+    color: var(--color1);
+    text-shadow: 0.5px 0.5px 2px rgba(255,255,255, 0.2);
 }
 
-i {
+.technologies i {
+    color: white;
     font-size: clamp(4.5rem, 6.5vw, 6.5rem);
     transition: ease-in-out .3s;
+}
+
+.technologies-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.profile-photo {
+    width: 400px;
 }
 
 @media only screen and (max-width: 1280px) {
