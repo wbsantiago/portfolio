@@ -2,24 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <img id="home" src="" alt="logo">
-        <ul>
-          <li><a href="#welcome-section">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="contact">Contato</a></li>
-        </ul>
-      </nav>
+        <a id="logo" href="index.html">&lt;Will/&gt;</a>
+        <nav id="navbar">
+            <ul>
+            <li><a class="navbar-link" href="#welcome-section">Sobre</a></li>
+            <li><a class="navbar-link" href="#projects">Projetos</a></li>
+            <li><a class="navbar-link" href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section id="welcome-section">
-        <h1>Willian B. Santiago</h1>
+        <section class="name-career">
+          <h1>Willian B. Santiago</h1>
+          <h4>Desenvolvedor Front-end</h4>
+        </section>
+        <section id="welcome-section">
+        <div class="div-about">
+            <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident.</p><br>
+            <p class="about-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo expedita atque repellat unde temporibus fuga enim fugiat ea sunt, numquam aspernatur debitis eum provident dolor eveniet labore voluptate nihil facilis.</p><br>
+            <p class="about-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo expedita atque repellat unde temporibus fuga enim fugiat ea sunt, numquam aspernatur debitis eum provident dolor eveniet labore voluptate nihil facilis.</p>
+            <div class="technologies">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-square-github"></i>
+                <i class="fa-brands fa-react"></i>
+            </div>
+        </div>
+        <img class="profile-photo" src="img/perfil-transparent.png" alt="avatar do perfil">
       </section>
       <section id="projects">
         <h2>Projetos Recentes</h2>

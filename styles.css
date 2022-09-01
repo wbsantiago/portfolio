@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+:root {
+    --color1: #F2668B;
+    --color2: #025E73;
+    --color3: #011F26;
+    --color4: #026873;
+    --color5: #03A688;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,22 +21,100 @@
 
 html {
   font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+  background-repeat: no-repeat;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    padding: 1.5em 0 1em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #navbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  /* background: var(--main-red);
-  box-shadow: 0 2px 0 rgb(0 0 0 / 40%); */
-  z-index: 10;
+}
+
+#logo {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px var(--color1);
+    font-size: 1.5em;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 3em;
+    list-style-type: none;
+}
+
+#navbar .navbar-link {
+    text-decoration: none;
+    color: white;
 }
 
 main {
-  margin: 100px 0 0 0;
+    margin: 100px 0 0 0;
+}
+
+.name-career {
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    font-style: italic;
+    color: white;
+}
+
+h4 {
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+}
+
+#welcome-section {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.div-about {
+    margin-top: 2em;
+}
+
+.about-me {
+    width: 400px;
+    color: white;
+}
+
+.technologies {
+    margin-top: 4em;
+}
+
+.technologies img {
+    color: white;
+}
+
+i {
+    font-size: clamp(4.5rem, 6.5vw, 6.5rem);
+    transition: ease-in-out .3s;
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        max-width: 900px;
+    }
 }
