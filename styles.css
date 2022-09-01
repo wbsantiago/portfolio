@@ -7,11 +7,11 @@
   }
 
 :root {
-    --color1: #F2668B;
+    --color1: #F2668B; /*rgba(242, 102, 139, 1); */
     --color2: #025E73;
     --color3: #011F26;
     --color4: #026873;
-    --color5: #03A688;
+    --color5: #03A688; 
 }
 
 *, * ::after, * ::before {
@@ -49,7 +49,7 @@ header {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 700;
-    color: var(--color1);
+    color: white;
     text-shadow: 0.5px 0.5px 2px rgba(255,255,255, 0.2);
 }
 
@@ -60,7 +60,27 @@ header {
 }
 
 #navbar .navbar-link {
+    position: relative;
     text-decoration: none;
+    color: lightgray;
+}
+
+#navbar .navbar-link:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color1);
+    height: 2.5px;
+    left: 0;
+    width: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+
+#navbar .navbar-link:hover:after {
+    width: 100%;
+}
+
+#navbar .navbar-link:hover {
     color: white;
 }
 
@@ -68,7 +88,7 @@ main {
     margin: 100px 0 0 0;
 }
 
-.name-career {
+#name-career {
     text-align: center;
 }
 
@@ -96,6 +116,13 @@ h4 {
     margin: auto;
 }
 
+#welcome-section span {
+    color: var(--color1);
+    font-size: 1.9em;
+    margin-right: 0.2em;
+    float: left;
+}
+
 .div-about {
     margin-top: 2em;
 }
@@ -107,7 +134,7 @@ h4 {
 }
 
 .technologies {
-    margin-top: 4em;
+    margin-top: clamp(2em, 4em, 6em);
 }
 
 .technologies h4 {
@@ -119,10 +146,21 @@ h4 {
     text-shadow: 0.5px 0.5px 2px rgba(255,255,255, 0.2);
 }
 
+.technologies-icons-item {
+    width: 5.5rem;
+    height: 4.5rem;
+    align-items: center;
+    text-align: center;
+}
+
 .technologies i {
     color: white;
-    font-size: clamp(4.5rem, 6.5vw, 6.5rem);
+    font-size: clamp(4rem, 6vw, 6rem);
     transition: ease-in-out .3s;
+}
+
+.technologies i:hover {
+    font-size: clamp(5rem, 6.5vw, 7rem);
 }
 
 .technologies-icons {
@@ -136,8 +174,36 @@ h4 {
     width: 400px;
 }
 
+#projects {
+    height: 900px;
+    margin-top: 4em;
+}
+
+#projects h2 {
+    color: white;
+    margin-left: 4em;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#projects span {
+    color: var(--color1);
+    font-weight: 700;
+    font-size: 54px;
+}
+
+
+
 @media only screen and (max-width: 1280px) {
     body {
         max-width: 900px;
+    }
+
+    .technologies-icons-item {
+        width: 4em;
+        height: 3em;
+        align-items: center;
+        text-align: center;
     }
 }
