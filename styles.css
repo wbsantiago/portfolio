@@ -286,6 +286,23 @@ h4 {
     color: white;
 }
 
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 4em;
+    color: white;
+    padding-bottom: 1em;
+    background: rgba(0,0,0, 0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 @media only screen and (max-width: 1280px) {
     body {
         max-width: 900px;
