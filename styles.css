@@ -171,7 +171,7 @@ h4 {
 }
 
 .profile-photo {
-    width: 400px;
+    max-width: 400px;
 }
 
 #projects {
@@ -247,7 +247,6 @@ h4 {
 }
 
 .contact-text {
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,6 +305,11 @@ footer a {
 @media only screen and (max-width: 1280px) {
     body {
         max-width: 900px;
+        marrgin: 80%;
+    }
+
+    .profile-photo {
+        /* width: 350px; */
     }
 
     .technologies-icons-item {
@@ -313,5 +317,110 @@ footer a {
         height: 3em;
         align-items: center;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+
+    #welcome-section {
+        height: auto;
+        margin: 3em auto;
+    }
+
+    .profile-photo {
+        width: 220px;
+    }
+
+    .technologies {
+        margin-top: clamp(1em, 2em, 4em);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    header {
+        box-shadow: 0 0 0;
+        border-bottom: 2px solid rgba(0,0,0, 0.4);
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    #welcome-section {
+        flex-direction: column-reverse;
+    }
+
+    .profile-photo {
+        width: 180px;
+    }
+
+    .about-me {
+        width: 80vw;
+    }
+
+    #projects h2, #contact h2 {
+        margin-left: 1em;
+    }
+
+    .contact-text {
+        padding: 4em 0.5em;
+    }
+
+    .contact-links {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        width: 80%;
+    }
+
+    #navbar ul {
+        gap: 1.4em;
+    }
+
+    .about-me {
+        width: 80vw;
+    }
+
+    .technologies-icons {
+        gap: 0.5rem;
+    }
+
+    #projects h2, #contact h2 {
+        margin-left: 0.3em;
+        font-size: 28px;
+    }
+
+    .contact-text {
+        flex-direction: column-reverse;
+    }
+
+    .interview-img {
+        width: 60vw;
+    }
+
+    footer p {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #logo {
+        font-size: 1.2em;
+    }
+    
+    #navbar ul {
+        gap: 0.7em;
     }
 }
