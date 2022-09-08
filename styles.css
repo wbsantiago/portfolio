@@ -365,6 +365,16 @@ footer a {
     .technologies {
         margin-top: clamp(1em, 2em, 4em);
     }
+    .contact-content {
+        margin: 0 2em;
+        gap: 2em;
+    }
+    .contact-text p {
+        font-size: 1em;
+        font-style: italic;
+        line-height: 1.4;
+        max-width: 300px;
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -389,12 +399,26 @@ footer a {
         width: 80vw;
     }
 
-    #projects h2, #contact h2 {
+    #projects h2, {
         margin-left: 1em;
     }
 
-    .contact-text {
-        padding: 4em 0.5em;
+    .contact-content {
+        flex-direction: column;
+        padding: 3em 0 1em 0;
+    }
+
+    #contact h2 {
+        font-size: 36px;
+    }
+
+    #contact .contact-title {
+        font-size: 42px;
+    }
+
+    .contact-text p{
+        margin: auto;
+        text-align: center;
     }
 
     .contact-links {
@@ -404,10 +428,6 @@ footer a {
 }
 
 @media only screen and (max-width: 425px) {
-    body {
-        width: 80%;
-    }
-
     #navbar ul {
         gap: 1.4em;
     }
@@ -420,21 +440,26 @@ footer a {
         gap: 0.5rem;
     }
 
-    #projects h2, #contact h2 {
+    #projects h2 {
         margin-left: 0.3em;
         font-size: 28px;
+    }
+
+    .contact-content {
+        padding: 
+    }
+
+    #contact h2 {
+        font-size: 28px;
+        padding-top: 5em;
     }
 
     .contact-text {
         flex-direction: column-reverse;
     }
 
-    .interview-img {
-        width: 60vw;
-    }
-
     footer p {
-        font-size: 1em;
+        font-size: 0.9em;
         text-align: center;
     }
 }
