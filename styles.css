@@ -179,6 +179,8 @@ h4 {
 
 #projects {
     margin-top: 4em;
+    height: 100vh;
+    background: linear-gradient(15deg, /*var(--color1) 0%, var(--color1) 1%,*/ var(--color3) 80%, var(--color3) 100%);
 }
 
 #projects h2 {
@@ -202,6 +204,7 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
     margin: 2.5em auto 0 auto;
+    max-width: 1280px;
 }
 
 .projects-block {
@@ -237,7 +240,7 @@ h4 {
 }
 
 .projects-description h3 {
-    color: var(--color1);
+    color: white;
 }
 
 .projects-description a {
@@ -246,7 +249,7 @@ h4 {
 }
 
 #contact {
-    margin: 4em 0 0 0;
+    /* margin: 4em 0 0 0; */
     background-image: url("./img/background-image.png");
     background-attachment: fixed;
     background-position: center;
@@ -312,6 +315,7 @@ h4 {
 .contact-links a {
     text-decoration: none;
     color: white;
+    font-size: 1.2em;
 }
 
 .contact-links i {
@@ -333,6 +337,13 @@ footer div {
 footer a {
     text-decoration: none;
     color: white;
+    font-size: 2em;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1280px) {
