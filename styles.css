@@ -26,9 +26,12 @@ html {
   /* background-color: var(--color3); */
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0 auto;
-    max-width: 1280px;
 }
 
 header {
@@ -178,7 +181,7 @@ h4 {
     margin-top: 4em;
 }
 
-#projects h2, #contact h2 {
+#projects h2 {
     color: white;
     margin-left: 4em;
     font-size: 36px;
@@ -243,19 +246,48 @@ h4 {
 }
 
 #contact {
-    margin: 4em 0 7em 0;
+    margin: 4em 0 0 0;
+    background-image: url("./img/background-image.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 7em;
+    height: 80vh;
+}
+
+#contact h2 {
+    padding: 2em 0 1em 0;
+    font-size: 64px;
+    color: white;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}
+
+#contact .contact-title {
+    font-size: 72px;
+}
+
+.contact-content {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    padding: 5em 0 1em 0; 
+    justify-content: space-around; 
 }
 
 .contact-text {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    padding: 8em 4em;
+    flex-direction: column;
+    max-width: 500px;
 }
 
 .contact-text p {
     color: white;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.6;
 }
 
 .contact-text p:first-of-type {
@@ -271,9 +303,10 @@ h4 {
 
 .contact-links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 2em;
 }
 
 .contact-links a {
@@ -293,8 +326,8 @@ footer div {
     height: 4em;
     color: white;
     padding-bottom: 1em;
-    background: rgba(0,0,0, 0.4);
-    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    background: rgba(0,0,0, 1);
+    box-shadow: 0px 0px 30px rgba(0,0,0, 1);
 }
 
 footer a {
@@ -303,15 +336,6 @@ footer a {
 }
 
 @media only screen and (max-width: 1280px) {
-    body {
-        max-width: 900px;
-        marrgin: 80%;
-    }
-
-    .profile-photo {
-        /* width: 350px; */
-    }
-
     .technologies-icons-item {
         width: 4em;
         height: 3em;
@@ -322,7 +346,7 @@ footer a {
 
 @media only screen and (max-width: 768px) {
     body {
-        width: 90%;
+        width: 100%;
     }
     
     h1 {
