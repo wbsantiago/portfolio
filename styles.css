@@ -11,7 +11,7 @@
     --color2: #025E73;
     --color3: #011F26;
     --color4: #026873;
-    --color5: #03A688; 
+    --color5: #DCDCDD; 
 }
 
 *, * ::after, * ::before {
@@ -110,7 +110,7 @@ h4 {
 }
 
 #welcome-section {
-    height: 700px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -173,28 +173,34 @@ h4 {
     gap: 1.2em;
 }
 
+.img-transparent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .profile-photo {
     max-width: 400px;
 }
 
 #projects {
-    margin-top: 4em;
+    /* margin-top: 4em; */
     height: 100vh;
-    background: linear-gradient(15deg, /*var(--color1) 0%, var(--color1) 1%,*/ var(--color3) 80%, var(--color3) 100%);
+    background: linear-gradient(15deg, /*var(--color1) 0%, var(--color1) 1%,*/ var(--color5) 80%, var(--color5) 100%); // assdsadas
 }
 
 #projects h2 {
-    color: white;
+    color: var(--color4);
     font-size: 54px;
     font-weight: 700;
     font-style: italic;
     text-align: center;
 }
 
-#projects span, #contact span {
+#projects span {
     color: var(--color1);
     font-weight: 700;
-    font-size: 64px;
+    font-size: 72px;
 }
 
 .projects-grid {
@@ -215,8 +221,8 @@ h4 {
     margin: 0.5em;
     padding: 0.5em;
     border-radius: 10px;
-    background: rgba(0,0,0, 0.4);
-    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    background: rgba(0,0,0, 0.7);
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.7);
 }
 
 .projects-grid img {
@@ -274,6 +280,12 @@ h4 {
 
 #contact .contact-title {
     font-size: 72px;
+}
+
+#contact span {
+    color: var(--color1);
+    font-weight: 700;
+    font-size: 64px;
 }
 
 .contact-content {
