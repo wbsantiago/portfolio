@@ -262,7 +262,7 @@ h4 {
 
 #contact {
     /* margin: 4em 0 0 0; */
-    background-image: url("./img/background-image.png");
+    background-image: url("./assets/background-image.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
