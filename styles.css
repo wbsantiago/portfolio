@@ -217,7 +217,8 @@ h4 {
 
 #projects {
     /* margin-top: 4em; */
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background: linear-gradient(15deg, /*var(--color1) 0%, var(--color1) 1%,*/ var(--color5) 80%, var(--color5) 100%); // assdsadas
 }
 
