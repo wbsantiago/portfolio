@@ -398,6 +398,56 @@ footer a:hover {
     opacity: 1;
 }
 
+@media only screen and (max-width: 1366px) {
+    
+
+    h1 {
+        margin-top: 0.5em;
+    }
+
+    .profile-photo {
+        max-width: 370px;
+    }
+
+    .about-me:first-of-type {
+        margin-top: 2em;
+    }
+
+    .about-me {
+        font-size: em;
+    }
+
+    #projects h2 {
+        font-size: 44px;
+    }
+
+    .projects-grid {
+        max-width: 1080px;
+    }
+
+    .projects-block {
+        width: 16rem;
+        height: 16rem;
+    }
+        
+    .projects-grid img {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .projects-description h3 {
+        font-size: 0.8em;
+    }
+
+    #contact h2 {
+        font-size: 44px;
+    }
+
+    #contact .contact-title {
+        font-size: 52px;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     
     #welcome-section {
@@ -408,12 +458,12 @@ footer a:hover {
         font-size: 36px;
     }
 
-    .about-me-div {
-        width: 90%;
+    .content-about-me {
+        margin-top: 0;
     }
 
-    .profile-photo {
-        max-width: 370px;
+    .about-me-div {
+        width: 90%;
     }
     
     .technologies-icons-item {
@@ -424,12 +474,23 @@ footer a:hover {
     }
 
     #projects {
+        min-height: 100vh;
         height: auto;
-        padding: 2em 0 4em 0;
     }
 
-    
+    #projects h2 {
+        padding-top: 0;
+    }
 
+    .projects-grid {
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .profile-photo {
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -442,16 +503,12 @@ footer a:hover {
     }
 
     .about-me {
-        font-size: 0.9em;
-        margin-top: 0.7em
+        font-size: 0.8em;
+        margin-top: 0em
     }
 
     #welcome-section {
         margin: auto;
-    }
-
-    .profile-photo {
-        width: 300px;
     }
 
     .technologies {
@@ -478,6 +535,7 @@ footer a:hover {
     h1 {
         font-size: 40px;
         text-align: center;
+        padding-top: 1em;
     }
 
     h4 {
@@ -485,9 +543,9 @@ footer a:hover {
     }
 
     #welcome-section {
-        height: 900px;
-        min-height: auto;
-        justify-content: space-between;
+        min-height: 100vh;
+        height: auto;
+        justify-content: flex-end;
     }
 
     .profile-photo {
@@ -497,6 +555,10 @@ footer a:hover {
     .about-me-div {
         flex-direction: column;
         height: auto;
+    }
+
+    .technologies {
+        height: 150px;
     }
 
     .content-about-me {
@@ -516,13 +578,10 @@ footer a:hover {
         align-items: center;
     }
 
-    .technologies {
-         height: 300px;
-    }
-
     #projects h2 {
         font-size: 36px;
         font-weight: 700;
+        padding-top: 1em;
     }
 
     #projects span {
@@ -609,16 +668,13 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 375px) {
+    
     #logo {
         font-size: 1.2em;
     }
     
     #navbar ul {
         gap: 0.7em;
-    }
-
-    #projects h2 {
-        margin-top: 2em;
     }
 
     #contact h2{
