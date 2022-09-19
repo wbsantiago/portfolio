@@ -95,7 +95,7 @@ header {
 /* WELCOME-SECTION INICIO */
 
 #welcome-section {
-    height: 800px; 
+    height: calc(100vh - 69px); 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -133,7 +133,6 @@ h4 {
 
 .content-about-me{
     margin-top: 2em;
-    margin: 2em auto 0 auto;
 }
 
 .about-me {
@@ -157,7 +156,7 @@ h4 {
 }
 
 .technologies {
-    height: 160px;
+    height: 18vh;
     padding-top: clamp(0.75em, 1.5em, 2.5em);
     background-color: var(--color5);
     width: 100%;
@@ -404,6 +403,10 @@ footer a:hover {
         margin-top: 0.5em;
     }
 
+    #welcome-section {
+        height: 800px;
+    }
+
     .profile-photo {
         max-width: 370px;
     }
@@ -416,8 +419,8 @@ footer a:hover {
         margin-top: 2em;
     }
 
-    .about-me {
-        font-size: em;
+    .technologies {
+        height: 160px;
     }
 
     #projects h2 {
@@ -463,10 +466,6 @@ footer a:hover {
 
     h1 {
         font-size: 36px;
-    }
-
-    .content-about-me {
-        margin-top: 0;
     }
 
     .about-me-div {
