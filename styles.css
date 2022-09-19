@@ -95,8 +95,7 @@ header {
 /* WELCOME-SECTION INICIO */
 
 #welcome-section {
-    min-height: 700px; 
-    height: calc(100vh - 69px);
+    height: 800px; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -130,12 +129,11 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 65vh;
-    /* max-height: 523px; */
 }
 
 .content-about-me{
     margin-top: 2em;
+    margin: 2em auto 0 auto;
 }
 
 .about-me {
@@ -159,7 +157,7 @@ h4 {
 }
 
 .technologies {
-    height: 18vh;
+    height: 160px;
     padding-top: clamp(0.75em, 1.5em, 2.5em);
     background-color: var(--color5);
     width: 100%;
@@ -409,6 +407,10 @@ footer a:hover {
         max-width: 370px;
     }
 
+    .content-about-me{
+        margin-top: 0em;
+    }
+    
     .about-me:first-of-type {
         margin-top: 2em;
     }
@@ -442,9 +444,13 @@ footer a:hover {
     #contact h2 {
         font-size: 44px;
     }
-
+    
     #contact .contact-title {
         font-size: 52px;
+    }
+
+    #projects h2 {
+        padding-top: 0;
     }
 }
 
@@ -478,10 +484,6 @@ footer a:hover {
         height: auto;
     }
 
-    #projects h2 {
-        padding-top: 0;
-    }
-
     .projects-grid {
         margin: 0 auto 0 auto;
     }
@@ -490,6 +492,10 @@ footer a:hover {
 @media only screen and (max-width: 800px) {
     .profile-photo {
         width: 300px;
+    }
+
+    #welcome-section {
+        height: 650px; 
     }
 }
 
