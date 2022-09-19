@@ -495,7 +495,7 @@ footer a:hover {
     }
 
     .about-me-div {
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: auto;
     }
 
