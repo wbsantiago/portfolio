@@ -110,13 +110,6 @@ h1 {
     margin-top: 1em;
 }
 
-#welcome-section span {
-    color: var(--color1);
-    font-size: 1.9em;
-    margin-right: 0.2em;
-    float: left;
-}
-
 h4 {
     color: white;
     font-style: italic;
@@ -139,6 +132,13 @@ h4 {
     max-width: 400px;
     color: white;
     margin: 0.5em 0 0 0;
+}
+
+.about-me:first-letter {
+    color: var(--color1);
+    font-size: 1.9em;
+    margin-right: 0.2em;
+    float: left;
 }
 
 .about-me:first-of-type {
@@ -230,7 +230,7 @@ h4 {
     text-align: center;
 }
 
-#projects span {
+#projects h2:first-letter {
     color: var(--color1);
     font-weight: 700;
     font-size: 72px;
@@ -292,6 +292,10 @@ h4 {
     pointer-events: none; // archor disabled
 }
 
+/* PROJECTS FIM */
+
+/* CONTACT INICIO */
+
 #contact {
     /* margin: 4em 0 0 0; */
     background-image: url("./assets/background-image.png");
@@ -316,7 +320,7 @@ h4 {
     font-size: 72px;
 }
 
-#contact span {
+#contact h2:first-letter {
     color: var(--color1);
     font-weight: 700;
     font-size: 64px;
@@ -372,6 +376,10 @@ h4 {
     color: white;
 }
 
+/* CONTACT FIM */
+
+/* FOOTER INICIO */
+
 footer div {
     display: flex;
     flex-direction: row;
@@ -394,6 +402,18 @@ footer a {
 
 footer a:hover {
     opacity: 1;
+}
+
+/* FOOTER FIM */
+
+@media only screen and (max-height: 800px) {
+    #welcome-section {
+        height: 800px;
+    }
+
+    .technologies {
+        height: 160px;
+    }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -427,6 +447,10 @@ footer a:hover {
         font-size: 44px;
     }
 
+    #projects h2:first-letter {
+        font-size: 56px;
+    }
+
     .projects-grid {
         max-width: 1080px;
     }
@@ -449,8 +473,8 @@ footer a:hover {
         font-size: 44px;
     }
     
-    #contact .contact-title {
-        font-size: 52px;
+    #contact h2:first-letter {
+        font-size: 56px;
     }
 
     #projects h2 {
@@ -590,7 +614,7 @@ footer a:hover {
         padding-top: 1em;
     }
 
-    #projects span {
+    #projects h2:first-letter {
         font-size: 42px;
     }
 
@@ -603,7 +627,7 @@ footer a:hover {
         font-size: 36px;
     }
 
-    #contact .contact-title {
+    #contact h2:first-letter{
         font-size: 42px;
     }
 
