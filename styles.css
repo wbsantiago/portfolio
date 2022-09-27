@@ -266,6 +266,17 @@ h4 {
     border-radius: 10px;
 }
 
+.projects-block-img {
+    width: 17rem;
+    height: 17rem;
+    margin: auto;
+    object-fit: scale-down;
+    border-radius: 10px;
+    background-image: url("https://scrimba.ams3.digitaloceanspaces.com/assets/emails/reactv2/projects/TravelJournal.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .bckgnd-img {
     background-color: white;
 }
@@ -286,10 +297,6 @@ h4 {
 .projects-description a {
     color: white;
     text-decoration: none;
-}
-
-.em-breve {
-    pointer-events: none; // archor disabled
 }
 
 /* PROJECTS FIM */
@@ -460,7 +467,7 @@ footer a:hover {
         height: 16rem;
     }
         
-    .projects-grid img {
+    .projects-grid img,.projects-block-img {
         width: 13rem;
         height: 13rem;
     }
