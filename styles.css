@@ -248,7 +248,7 @@ h4 {
 
 .projects-block {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     width: 20rem;
     height: 20rem;
     margin: 1em;
@@ -258,45 +258,72 @@ h4 {
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
 }
 
-.projects-grid img {
-    width: 17rem;
-    height: 17rem;
-    margin: auto;
-    object-fit: scale-down;
-    border-radius: 10px;
+.projects-linkArea {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
 }
 
-.projects-block-img {
+.projects-block-img,
+.projects-block-img2,
+.projects-block-img3,
+.projects-block-img4,
+.projects-block-img5,
+.projects-block-img6 {
     width: 17rem;
     height: 17rem;
     margin: auto;
     object-fit: scale-down;
     border-radius: 10px;
-    background-image: url("https://scrimba.ams3.digitaloceanspaces.com/assets/emails/reactv2/projects/TravelJournal.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.bckgnd-img {
-    background-color: white;
+.projects-block-img {
+    background-image: url("https://scrimba.ams3.digitaloceanspaces.com/assets/emails/reactv2/projects/TravelJournal.jpg");
 }
 
-.projects-description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;;
+.projects-block-img2 {
+    background-image: url("./assets/landing-page.png");
+}
+
+.projects-block-img3 {
+    background-image: url("./assets/cpf-validator.png");
+}
+
+.projects-block-img4 {
+    background-image: url("./assets/tenzies.svg");
+}
+
+.projects-block-img5 {
+    background-image: url("./assets/quiz-game.svg");
+}
+
+.projects-block-img6 {
+    background-image: url("./assets/magazine.png");
+}
+
+.projects-block-img:hover,
+.projects-block-img2:hover,
+.projects-block-img3:hover,
+.projects-block-img4:hover,
+.projects-block-img5:hover,
+.projects-block-img6:hover {
+    position: absolute;
+    top: 0.3em;
+    width: 20rem;
+    height: 20rem;
+    transition: 0.5s;
 }
 
 .projects-description h3 {
     color: white;
     font-size: 0.95em;
-}
-
-.projects-description a {
-    color: white;
-    text-decoration: none;
 }
 
 /* PROJECTS FIM */
@@ -413,16 +440,6 @@ footer a:hover {
 
 /* FOOTER FIM */
 
-@media only screen and (max-height: 800px) {
-    #welcome-section {
-        height: 800px;
-    }
-
-    .technologies {
-        height: 160px;
-    }
-}
-
 @media only screen and (max-width: 1366px) {
     
 
@@ -452,6 +469,7 @@ footer a:hover {
 
     #projects h2 {
         font-size: 44px;
+        padding-top: 0;
     }
 
     #projects h2:first-letter {
@@ -466,14 +484,32 @@ footer a:hover {
         width: 16rem;
         height: 16rem;
     }
-        
-    .projects-grid img,.projects-block-img {
+
+    .projects-description h3 {
+        font-size: 0.8em;
+    }
+
+    .projects-block-img,
+    .projects-block-img2,
+    .projects-block-img3,
+    .projects-block-img4,
+    .projects-block-img5,
+    .projects-block-img6 {
         width: 13rem;
         height: 13rem;
     }
 
-    .projects-description h3 {
-        font-size: 0.8em;
+    .projects-block-img:hover,
+    .projects-block-img2:hover,
+    .projects-block-img3:hover,
+    .projects-block-img4:hover,
+    .projects-block-img5:hover,
+    .projects-block-img6:hover {
+        position: absolute;
+        top: 0.3em;
+        width: 16rem;
+        height: 16rem;
+        transition: 0.4s;
     }
 
     #contact h2 {
@@ -482,10 +518,6 @@ footer a:hover {
     
     #contact h2:first-letter {
         font-size: 56px;
-    }
-
-    #projects h2 {
-        padding-top: 0;
     }
 }
 
@@ -527,6 +559,16 @@ footer a:hover {
 
     #welcome-section {
         height: 650px; 
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    #welcome-section {
+        height: 800px;
+    }
+
+    .technologies {
+        height: 160px;
     }
 }
 
